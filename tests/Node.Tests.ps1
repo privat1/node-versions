@@ -47,4 +47,8 @@ Describe "Node.js" {
     It "NPM is correct" {
         "npm --version" | Should -ReturnZeroExitCode
     }
+
+    It "NPM install" {
+        "npm install semver" | Should -ReturnZeroExitCode
+    }
 }
