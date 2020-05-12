@@ -43,4 +43,8 @@ Describe "Node.js" {
     It "Run simple code" {
         "node ./simple-test.js" | Should -ReturnZeroExitCode
     }
+
+    It "NPM is correct" {
+        "npm --version" | Should -ReturnZeroExitCode
+    }
 }
