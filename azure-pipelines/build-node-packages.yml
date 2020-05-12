@@ -40,7 +40,7 @@ stages:
   condition: succeeded()
   dependsOn: Build_Node_Linux
   variables:
-    VmImage: ubuntu-latest
+    VmImage: ubuntu-16.04
     Platform: linux
     Architecture: x64
   jobs:
